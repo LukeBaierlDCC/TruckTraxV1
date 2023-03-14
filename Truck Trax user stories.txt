@@ -1,0 +1,15 @@
+User stories
+
+Customer:
+-as a customer I would like to browse an overall view of materials I need to assist in my project.
+-as a customer, I get very frustrated when an item I need is out of stock, so I need alternatives. 
+-as a customer, I need to know the specs of the item before I buy it.
+-as a customer, I'd like to keep tabs on the latest reported shipping facility of my item. Maybe there's some sort of GPS API for that?
+-as a customer, I would like an order history of my past purchases including how much they cost in the past as inflation rises.
+
+Employee/Admin:
+-as an admin, I too would like to view all materials, but I'd like to be able to add new items or make updates to existing items.
+-as an admin, I can understand the customer's frustration, which is why I'll list the alternatives on the item's page.
+-as an admin, specs are different for each item, so each item classified will need it's own general SQL table.
+-as an admin, I would also like a way to keep track of exactly when (what times of year) these items are most popular as customers have their general favorites. There must be some predictive data that can assist me with graphs.
+-as an admin, I too would like to be able to keep track of how much items change in value over time for company budgeting and marketing purposes.

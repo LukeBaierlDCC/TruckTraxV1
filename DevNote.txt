@@ -1,0 +1,4 @@
+It is 2023 and I am intentionally using .NET Core 3.1. 
+I have every desire to learn the latest and greatest Microsoft Entity Framework that releases every two weeks, but I have no desire to spend half my time installing extensions when I could be spending that time building my website.
+It is more common to work for a company that is several years behind on technology and less common to work for a company that uses the latest and greatest versions (when those are only relevant for a month anyway). 
+Therefore, I have decided to proceed with version 3.1 for version 1.0 of TruckTrax. If anything, it's essential to learn the older versions and models, which are translatable to the newer upgrades. 

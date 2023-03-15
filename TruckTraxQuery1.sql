@@ -1,1 +1,1 @@
-﻿select * from Saws
+﻿select * from Hammers

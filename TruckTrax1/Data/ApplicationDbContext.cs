@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using TruckTrax1.Models;
 
 namespace TruckTrax1.Data
 {
@@ -12,5 +13,6 @@ namespace TruckTrax1.Data
             : base(options)
         {
         }
+        public DbSet<TruckTrax1.Models.ExtensionCords> ExtensionCords { get; set; }
     }
 }

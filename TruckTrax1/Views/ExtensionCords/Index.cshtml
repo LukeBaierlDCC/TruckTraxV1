@@ -1,0 +1,65 @@
+﻿@model IEnumerable<TruckTrax1.Models.ExtensionCords>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ECBrandName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ECLengthInFeet)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ECFunctionality)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ECDetails)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ECItemNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CordPrice)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ECBrandName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ECLengthInFeet)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ECFunctionality)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ECDetails)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ECItemNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CordPrice)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
